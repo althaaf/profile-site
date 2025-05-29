@@ -156,3 +156,48 @@ body {
     gap: 1rem;
   }
 }
+/* ===== Technical Interests ===== */
+.interest {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.interest figure {
+  margin: 0;
+  text-align: center;
+}
+
+.interest img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.interest figcaption {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.interest-content h3 {
+  margin-top: 0;
+  color: var(--dark);
+}
+
+.interest-content p {
+  margin: 0.5rem 0;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .interest {
+    flex-direction: column;
+    text-align: center;
+  }
+  .interest-content {
+    margin-top: 1rem;
+  }
+}
