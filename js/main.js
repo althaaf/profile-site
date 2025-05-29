@@ -1,4 +1,3 @@
-// Sample data for each project
 const projects = {
   "weather-app": {
     title: "Weather App",
