@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Nav (reuse your header) -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Muhammad Althaf</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="CV.pdf" target="_blank">CV</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="interests.html">Interests</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <main class="container">
+    <h2>Portfolio</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card" data-id="weather-app">
+        <img src="images/weather app.jpg" alt="Screenshot of Weather App">
+        <h3>Weather App</h3>
+        <button class="btn more-info">More Info</button>
+        <a href="project-weather-app.html" class="btn">View Details</a>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-id="todo-list">
+        <img src="images/to do list.jpg" alt="Screenshot of To-Do List">
+        <h3>To-Do List</h3>
+        <button class="btn more-info">More Info</button>
+        <a href="project-todo-list.html" class="btn">View Details</a>
+      </article>
+
+      
+    </div>
+  </main>
+
+  <!-- Modal Overlay -->
+  <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-description"></p>
+      <a id="modal-link" href="#" class="btn">Go to Details</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
