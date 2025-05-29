@@ -1,25 +1,52 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>My Profile</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Muhammad Althaf</h1>
-    <p>2nd Year Bsc computer science</p>
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Muhammad Althaf</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="cv.pdf" target="_blank">CV</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="interests.html">Technical Interests</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <img src="images/althaf image.jpg" alt="Image of Althaf" width="200"/>
-      <p>Hello! My name is Muhammad Althaf and I’m currently a second-year Computer Science student at university of Hertfordshire. I'm passionate about solving real-world problems using technology and continuously expanding my technical skill set.</p>
-      <p>I created this site to showcase my work and share my interests in areas such as web development, data analysis, and cybersecurity. I'm actively seeking placement opportunities where I can contribute to innovative projects and grow as a software developer.</p>
-    </section>
-  </main>
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-image">
+      <img src="images/althaf image.jpg" alt="Photo of Muhammad Althaf">
+    </div>
+    <div class="hero-content">
+      <span class="hello-tag">HELLO</span>
+      <h2>I'm <strong>Muhammad Althaf</strong></h2>
+      <p class="subtitle">Future Tech Enthusiast</p>
+      <ul class="info-list">
+        <li><strong>Year of Study:</strong> 2nd Year</li>
+        <li><strong>Program:</strong>Bsc Computer Science</li>
+        <li><strong>Email:</strong> althaf007134@gmail.com</li>
+      </ul>
+      <a href="cv.pdf" class="btn">Download CV</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="about container">
+    <h2>About Me</h2>
+    <p>
+      Hello! My name is Muhammad Althaf and I’m currently a second-year Computer Science student at the University of Hertfordshire. 
+      I’m passionate about building responsive, accessible web experiences and continuously learning new technologies.
+    </p>
+  </section>
 </body>
 </html>
